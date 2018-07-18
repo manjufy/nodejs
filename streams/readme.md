@@ -1,8 +1,8 @@
 # Run
 
-$> node index.js
+`> node index.js`
 
-$> curl localhost:1300 -d "{}" // object
+`> curl localhost:1300 -d "{}" // object`
 
 
 # References:
