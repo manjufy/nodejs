@@ -94,6 +94,11 @@ require > node
 > require.extensions
 { '.js': [Function], '.json': [Function], '.node': [Function] }
 // { '.js': [Function], '.json': [Function], '.node': [Function] }
+
+> require.extensions
+{ '.js': [Function], '.json': [Function], '.node': [Function] }
+> require.extensions['.js'].toString()
+'function(module, filename) {\n  var content = fs.readFileSync(filename, \'utf8\');\n  module._compile(stripBOM(content), filename);\n}'
 ```
 
 REPL - Read-Eval-Print-Loop
