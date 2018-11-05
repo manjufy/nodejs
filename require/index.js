@@ -1,6 +1,8 @@
-module.exports = function () {}; // exports object holds a function
+exports.id = 'index.js' // exports: { id: 'index.js' },
+module.exports = function () {}; // overrides the above exports.id and exports object now holds a function
 exports = function () {}; // defaults to object, it does not assign a function to exports.
-module.manju = {}
+module.manju = {} // we can create a new properity in a module
 console.log('In index', module)
-console.log('Module', module.manju)
-require('./lib/util')
+console.log('Custom module', module.manju)
+const util = require('./lib/util')
+console.log('Util', util)

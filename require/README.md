@@ -73,6 +73,10 @@ exports = function ()
 
 we can't do that because, `exports` variable inside each module is just a reference to `module.exports` which manages the exported properties. When we reassign the `exports` variable, that reference is lost and we would be introducing a new variable instead of changing the `module.exports` object
 
+#### loaded attribute
+
+
+
 REPL - Read-Eval-Print-Loop
 
 https://medium.freecodecamp.org/requiring-modules-in-node-js-everything-you-need-to-know-e7fbd119be8
