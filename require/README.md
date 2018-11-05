@@ -87,6 +87,15 @@ require > node lib/module1.js
 // Module1 is partially loaded here { a: 1 }
 ```
 
+### File extensions
+
+```
+require > node
+> require.extensions
+{ '.js': [Function], '.json': [Function], '.node': [Function] }
+// { '.js': [Function], '.json': [Function], '.node': [Function] }
+```
+
 REPL - Read-Eval-Print-Loop
 
 https://medium.freecodecamp.org/requiring-modules-in-node-js-everything-you-need-to-know-e7fbd119be8
