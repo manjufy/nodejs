@@ -128,6 +128,10 @@ function (require, module, __filename, __dirname) {
 }
 ```
 
+#### All modules will be cached
+
+
+
 REPL - Read-Eval-Print-Loop
 
 https://medium.freecodecamp.org/requiring-modules-in-node-js-everything-you-need-to-know-e7fbd119be8
