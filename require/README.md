@@ -52,11 +52,6 @@ require > node
 '..../nodejs/require/node_modules/manju-module/start.js'
 ```
 
-#### [Circular]
-
-module a required in module b and module b required in module a?
-
-
 #### exports, module.exports, and synchronous loading
 
 In any module, `exports` is a special object.
@@ -75,7 +70,22 @@ we can't do that because, `exports` variable inside each module is just a refere
 
 #### loaded attribute
 
+The `module` module uses the `loaded` attribute to track which modules have been loaded (true value) and which modules are still being loaded (false value)
 
+```
+setImmediate(() => {
+    console.log('The index.js module object is now loaded', module)
+})
+```
+
+#### [Circular]
+
+module a required in module b and module b required in module a?
+
+```
+require > node lib/module1.js
+// Module1 is partially loaded here { a: 1 }
+```
 
 REPL - Read-Eval-Print-Loop
 
