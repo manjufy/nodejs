@@ -23,6 +23,12 @@ Module {
      '/usr/local/Cellar/node/10.8.0/lib/node' ] }
 ```
 
+```
+require > echo "console.log('Module Manju');" > node_modules/manju.js
+require > node
+require > require('manju')
+```
+
 REPL - Read-Eval-Print-Loop
 
 https://medium.freecodecamp.org/requiring-modules-in-node-js-everything-you-need-to-know-e7fbd119be8
