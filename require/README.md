@@ -101,6 +101,33 @@ require > node
 'function(module, filename) {\n  var content = fs.readFileSync(filename, \'utf8\');\n  module._compile(stripBOM(content), filename);\n}'
 ```
 
+
+### exports, module.expots
+
+```
+exports.id = 42; // This is ok.
+exports = { id: 42 }; // This will not work.
+module.exports = { id: 42 }; // This is ok.
+```
+
+#### Node wrapper
+
+```
+> require('module').wrapper
+[ '(function (exports, require, module, __filename, __dirname) { ',
+  '\n});' ]
+```
+
+Basically, wrapper would looks something like this
+
+```
+function (require, module, __filename, __dirname) {
+  let exports = module.exports;
+  // Your Code...
+  return module.exports;
+}
+```
+
 REPL - Read-Eval-Print-Loop
 
 https://medium.freecodecamp.org/requiring-modules-in-node-js-everything-you-need-to-know-e7fbd119be8
