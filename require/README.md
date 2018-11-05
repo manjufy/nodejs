@@ -17,9 +17,9 @@ Module {
   loaded: false,
   children: [],
   paths:
-   [ ....
+   [ ....,
      '/node_modules',
-     ....
+     ....,
      '/usr/local/Cellar/node/10.8.0/lib/node' ] }
 ```
 
@@ -27,6 +27,16 @@ Module {
 require > echo "console.log('Module Manju');" > node_modules/manju.js
 require > node
 require > require('manju')
+// manju.js exists in any of the other paths, priority would be given to the one inside the project directory
+```
+
+```
+require > node
+> require('manju-module')
+=== Manju Module ===
+{}
+
+// index.js file will be used by default. However we can control the filename using `package.json`
 ```
 
 REPL - Read-Eval-Print-Loop
