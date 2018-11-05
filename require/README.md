@@ -5,6 +5,9 @@ Node uses two core modules for managing module dependencies
 - The `require` module; no need to `require('require')`
 - The `module` module; no need to `require('module')`
 
+
+### require
+
 ```
 require > node
 > module
@@ -38,6 +41,37 @@ require > node
 
 // index.js file will be used by default. However we can control the filename using `package.json`
 ```
+
+#### require.resolve
+
+allows one to resolve the module and not execute it
+
+```
+require > node
+> require.resolve('manju-module')
+'..../nodejs/require/node_modules/manju-module/start.js'
+```
+
+#### [Circular]
+
+module a required in module b and module b required in module a?
+
+
+#### exports, module.exports, and synchronous loading
+
+In any module, `exports` is a special object.
+
+```
+module.exports = function () {};
+```
+
+vs
+
+```
+exports = function ()
+```
+
+we can't do that because, `exports` variable inside each module is just a reference to `module.exports` which manages the exported properties. When we reassign the `exports` variable, that reference is lost and we would be introducing a new variable instead of changing the `module.exports` object
 
 REPL - Read-Eval-Print-Loop
 
