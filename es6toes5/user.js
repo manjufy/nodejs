@@ -2,7 +2,7 @@ export default function userService() {
   function getUser() {
       return {
           name: "Manjunath",
-          team: "Redbull"
+          team: "Red Bull"
       }
   }
 
