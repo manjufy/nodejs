@@ -10,7 +10,7 @@ Tools for testing in NodeJs
 - **Nock 🔮** - Use nock for external HTTP requests. Http mocking library
 - **Mock-require 🎩** - With a single line of code, we can replace a module and mock-require will step in when some code attepts to import that module
 - **Istanbul 🔭** - JavaScript code coverage tool that computes statement, line, function and branch coverage with module loader hooks to transparently add coverage when running tests.
-
+- **SuperTest:**  Simple way to test APIs with just few lines of commands.
 
 
 Reference: https://hackernoon.com/testing-node-js-in-2018-10a04dd77391
