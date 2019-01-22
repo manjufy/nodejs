@@ -11,6 +11,16 @@ Tools for testing in NodeJs
 - **Mock-require 🎩** - With a single line of code, we can replace a module and mock-require will step in when some code attepts to import that module
 - **Istanbul 🔭** - JavaScript code coverage tool that computes statement, line, function and branch coverage with module loader hooks to transparently add coverage when running tests.
 - **SuperTest:**  Simple way to test APIs with just few lines of commands.
+- TAPE: https://github.com/substack/tape
+- RITEWay: https://github.com/ericelliott/riteway
 
 
-Reference: https://hackernoon.com/testing-node-js-in-2018-10a04dd77391
+
+Reference: 
+
+https://hackernoon.com/testing-node-js-in-2018-10a04dd77391
+
+https://medium.com/javascript-scene/why-i-use-tape-instead-of-mocha-so-should-you-6aa105d8eaf4
+
+https://medium.com/javascript-scene/rethinking-unit-test-assertions-55f59358253f
+
