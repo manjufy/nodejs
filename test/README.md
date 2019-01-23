@@ -13,6 +13,7 @@ Tools for testing in NodeJs
 - **SuperTest:**  Simple way to test APIs with just few lines of commands.
 - TAPE: https://github.com/substack/tape
 - RITEWay: https://github.com/ericelliott/riteway
+- AVA: https://github.com/avajs/ava
 
 
 
