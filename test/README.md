@@ -15,7 +15,9 @@ Tools for testing in NodeJs
 - **RITEWay:** https://github.com/ericelliott/riteway
 - **AVA:** https://github.com/avajs/ava
 
+Load Testing
 
+- https://locust.io/
 
 Reference: 
 
