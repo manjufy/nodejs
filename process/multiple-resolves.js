@@ -1,18 +1,18 @@
 process.on('multipleResolves', (type, promise, reason) => {
-    console.error(type, promise, reason)
-    setImmediate(() => process.exit(1))
-})
+  console.error(type, promise, reason);
+  setImmediate(() => process.exit(1));
+});
 
-main = async () => {
-    try {
-        return new Promise((resolve, reject) => {
-            resolve('First call')
-            resolve('Second call')
-            reject(new Error('Huuuary'))
-        })
-    } catch {
-        throw new Error('Failed!')
-    }
+async function main() {
+  try {
+    return await new Promise((resolve, reject) => {
+      resolve('First call');
+      resolve('Swallowed resolve');
+      reject(new Error('Swallowed reject'));
+    });
+  } catch {
+    throw new Error('Failed');
+  }
 }
 
-main().then(console.log)
+main().then(console.log);
