@@ -30,4 +30,8 @@ Restify.js - http://restify.com/
 
 Adonisjs - https://adonisjs.com/
 
+### Logging
+
+log4js - https://github.com/log4js-node/log4js-node
+
 
