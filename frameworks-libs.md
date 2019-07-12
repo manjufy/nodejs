@@ -34,4 +34,8 @@ Adonisjs - https://adonisjs.com/
 
 log4js - https://github.com/log4js-node/log4js-node
 
+### JS Engines
+
+QuickJS - https://bellard.org/quickjs/quickjs.html
+
 
