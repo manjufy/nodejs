@@ -38,4 +38,8 @@ log4js - https://github.com/log4js-node/log4js-node
 
 QuickJS - https://bellard.org/quickjs/quickjs.html
 
+### Microservices
+
+Moleculer https://moleculer.services/
+
 
