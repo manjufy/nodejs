@@ -38,6 +38,12 @@ log4js - https://github.com/log4js-node/log4js-node
 
 QuickJS - https://bellard.org/quickjs/quickjs.html
 
+## Database / ORM / Query Builders
+
+https://knexjs.org/#Installation-migrations
+
+
+
 ### Microservices
 
 Moleculer https://moleculer.services/
