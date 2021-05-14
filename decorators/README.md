@@ -19,3 +19,7 @@ npx babel babel-test.js
 npx babel user-readonly-decorator.js -o user-readonly-decorator.out.js
 node user-readonly-decorator.out.js
 ```
+
+### Reference
+
+https://medium.com/jspoint/a-minimal-guide-to-ecmascript-decorators-55b70338215e
