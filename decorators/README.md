@@ -9,7 +9,7 @@
 
 
 
-## How to test Babel 
+## How to test with babel transpiler 
 
 ```
 npx babel babel-test.js
